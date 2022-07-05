@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding-top: 15px;
 }
 
 .App-logo {
@@ -7,9 +8,111 @@
   pointer-events: none;
 }
 
-.catpic{
-  height: 500px;
+.bttn:hover{
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+.btnToHere{
+  font-size: 20px;
+  width: 110px;
+  height: 50px;
+  border: none;
+  background-color: rgb(32, 32, 32);
+  color: white;
+}
+.btnToThere{
+  font-size: 20px;
+  width: 110px;
+  height: 50px;
+  border: none;
+  background-color: white;
+  color: blue;
+}
+
+.image-and-buttons{
+  padding: 25px  25px 75px 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 740px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.frame{
+  width: 740px;
+  overflow: hidden;
+}
+
+.catpic{
+  height: 400px;
+}
+
+.btnHomeBottom{
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  font-size: 20px;
+  background-color: white;
+  border: 2px solid rgb(206, 206, 206);
+  margin: 15px 20px;
+}
+
+.bottomButtons{
+  position: absolute;
+  left: calc(50% - 120px);
+}
+
+.favContainer{
+  width: 680px;
+  margin: 0 auto;
+}
+
+h1{
+  text-align: start; 
+  margin: 30px 0 10px 0;
+  font-size: 37px;
+}
+
+ul{
+  background-color: rgb(240, 240, 240);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  padding: 0;
+}
+
+.favItem{
+  display: inline-block;
+  margin: 10px;
+}
+
+.imageFrame{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+
+.mosaicImg{
+  min-width: 200px;
+  max-width: 300px;
+  min-height: 200px;
+  max-height: 300px;
+}
+
+.deleteBtn{
+  position:absolute;
+  border: none;
+  color: white;
+  background-color: red;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  right: 10px;
+  top: 10px;
+}
+
+.deleteBtn:hover{background-color: rgb(255, 83, 83);}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
