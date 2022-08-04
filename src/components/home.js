@@ -10,16 +10,15 @@ export const Home = ({favList, setFavList}) =>{
     fetch('https://api.thecatapi.com/v1/images/search?format=json')
     .then(res=>res.json())
     .then(data=> {
-        setImage(data[0].url)
-        console.log(data)
+      setImage(data[0].url)
+      console.log(data)
     })
   }
  //Pre-populate the todo list with github issues from this url: https://api.github.com/repos/every-io/demo-issues/issues
   const addToFav = () =>{
-      setFavList([...favList, image])
-      fetcher()
+    setFavList([...favList, image])
+    fetcher()
   }
-
   console.log(favList)
 
   return(
